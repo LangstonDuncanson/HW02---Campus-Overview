@@ -67,31 +67,31 @@
     {
     case 1:
             result = [NSString stringWithFormat:@"Campus:North\nAddress: 11380 NW 27th Ave, Miami, FL 33167\nPhone: (305) 237-1000"];
-            image = [NSString stringWithFormat:@"north.jpg"];
+            image = [NSString stringWithFormat:@"north"];
         break;
     case 2:
             result = [NSString stringWithFormat:@"Campus:Wolfson\nAddress: 300 NE 2nd Ave, Miami, FL 33132\nPhone: (305) 237-8888"];
-            image = [NSString stringWithFormat:@"Wolfson.jpg"];
+            image = [NSString stringWithFormat:@"Wolfson"];
         break;
     case 3:
             result = [NSString stringWithFormat:@"Campus:InterAmerican\nAddress: 627 SW 27th Ave, Miami, FL 33135\nPhone: (305) 237-6000"];
-            image = [NSString stringWithFormat:@"Interamerican.jpg"];
+            image = [NSString stringWithFormat:@"Interamerican"];
         break;
     case 4:
             result = [NSString stringWithFormat:@"Campus:Hialeah\nAddress: 1780 W 49th St, Hialeah, FL 33012\nPhone: (305) 237-8700"];
-            image = [NSString stringWithFormat:@"hialeah.jpg"];
+            image = [NSString stringWithFormat:@"hialeah"];
         break;
     case 5:
             result = [NSString stringWithFormat:@"Campus:Kendall\nAddress: 11011 SW 104th St, Miami, FL 33176\nPhone: (305) 237-2000"];
-            image = [NSString stringWithFormat:@"Kendall.jpg"];
+            image = [NSString stringWithFormat:@"Kendall"];
         break;
     case 6:
             result = [NSString stringWithFormat:@"Campus:Medical\nAddress: 950 NW 20th St. Miami, FL 33127\nPhone: (305) 237-4000"];
-            image = [NSString stringWithFormat:@"medical.jpg"];
+            image = [NSString stringWithFormat:@"medical"];
         break;
     case 7:
             result = [NSString stringWithFormat:@"Campus:West\nAddress: 3800 NW 115th Ave, Doral, FL 33178\nPhone: (305) 237-8000"];
-            image = [NSString stringWithFormat:@"west-campus.jpg"];
+            image = [NSString stringWithFormat:@"west-campus"];
         break;
     }
     self.campusImageView.image = [UIImage imageNamed:image];
