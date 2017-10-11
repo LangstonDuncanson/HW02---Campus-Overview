@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,80 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wolfson.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WIP-Bz-7xN">
+                                <rect key="frame" x="16" y="28" width="343" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="221" id="6oK-XC-pHL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOs-C7-aku">
+                                <rect key="frame" x="16" y="369" width="59" height="30"/>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="previousBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2o-ox-B3t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oD8-15-OaG">
+                                <rect key="frame" x="327" y="369" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9F3-6A-SEH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ2-AU-ewH">
+                                <rect key="frame" x="16" y="269" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="24" minValue="12" maxValue="36" translatesAutoresizingMaskIntoConstraints="NO" id="49V-4M-ghx">
+                                <rect key="frame" x="67" y="429" width="240" height="31"/>
+                                <connections>
+                                    <action selector="fontSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="5sM-Gz-VNg"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Font Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5c-sG-3Xn">
+                                <rect key="frame" x="152" y="394" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B5c-sG-3Xn" firstAttribute="centerX" secondItem="lJ2-AU-ewH" secondAttribute="centerX" id="0S0-On-Wbg"/>
+                            <constraint firstItem="WIP-Bz-7xN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="1RY-ck-YMh"/>
+                            <constraint firstItem="WIP-Bz-7xN" firstAttribute="leading" secondItem="lJ2-AU-ewH" secondAttribute="leading" id="2Og-jX-yul"/>
+                            <constraint firstItem="49V-4M-ghx" firstAttribute="centerX" secondItem="lJ2-AU-ewH" secondAttribute="centerX" id="2UB-xA-VRK"/>
+                            <constraint firstItem="49V-4M-ghx" firstAttribute="top" secondItem="B5c-sG-3Xn" secondAttribute="bottom" constant="17.5" id="8a6-La-wyE"/>
+                            <constraint firstItem="WIP-Bz-7xN" firstAttribute="trailing" secondItem="lJ2-AU-ewH" secondAttribute="trailing" id="B8g-Py-oOA"/>
+                            <constraint firstItem="49V-4M-ghx" firstAttribute="top" secondItem="lJ2-AU-ewH" secondAttribute="bottom" constant="52" id="Bsh-ZQ-ubX"/>
+                            <constraint firstItem="WIP-Bz-7xN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KB6-Tw-zbb"/>
+                            <constraint firstItem="XOs-C7-aku" firstAttribute="top" secondItem="lJ2-AU-ewH" secondAttribute="bottom" constant="8" id="Omi-2k-pay"/>
+                            <constraint firstItem="WIP-Bz-7xN" firstAttribute="leading" secondItem="XOs-C7-aku" secondAttribute="leading" id="QQz-IV-mhb"/>
+                            <constraint firstItem="lJ2-AU-ewH" firstAttribute="top" secondItem="WIP-Bz-7xN" secondAttribute="bottom" constant="20" id="V8X-MS-cLM"/>
+                            <constraint firstItem="oD8-15-OaG" firstAttribute="top" secondItem="lJ2-AU-ewH" secondAttribute="bottom" constant="8" id="cxB-T4-eKu"/>
+                            <constraint firstItem="WIP-Bz-7xN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cxM-mA-mDB"/>
+                            <constraint firstItem="oD8-15-OaG" firstAttribute="trailing" secondItem="WIP-Bz-7xN" secondAttribute="trailing" id="nt5-qa-27o"/>
+                            <constraint firstItem="49V-4M-ghx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="tHW-O1-GIb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="49V-4M-ghx" secondAttribute="trailing" constant="54" id="vXz-vj-1f9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="campusImageView" destination="WIP-Bz-7xN" id="V58-6r-gYE"/>
+                        <outlet property="campusInfo" destination="lJ2-AU-ewH" id="Tre-D2-6fu"/>
+                        <outlet property="fontSlider" destination="49V-4M-ghx" id="H9b-CM-n6u"/>
+                        <outlet property="nextBtn" destination="oD8-15-OaG" id="aGx-B1-bgL"/>
+                        <outlet property="previousBtn" destination="XOs-C7-aku" id="dmg-A0-loU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Wolfson.jpg" width="750" height="422"/>
+    </resources>
 </document>

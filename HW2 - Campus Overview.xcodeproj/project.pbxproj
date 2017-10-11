@@ -15,6 +15,13 @@
 		E56A26EE1F8D59FC00A8D204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56A26EC1F8D59FC00A8D204 /* LaunchScreen.storyboard */; };
 		E56A26F91F8D59FC00A8D204 /* HW2___Campus_OverviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E56A26F81F8D59FC00A8D204 /* HW2___Campus_OverviewTests.m */; };
 		E56A27041F8D59FC00A8D204 /* HW2___Campus_OverviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E56A27031F8D59FC00A8D204 /* HW2___Campus_OverviewUITests.m */; };
+		E56A27171F8D676D00A8D204 /* hialeah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E56A27111F8D676D00A8D204 /* hialeah.jpg */; };
+		E56A27181F8D676D00A8D204 /* Interamerican.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E56A27121F8D676D00A8D204 /* Interamerican.jpg */; };
+		E56A27191F8D676D00A8D204 /* Kendall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E56A27131F8D676D00A8D204 /* Kendall.jpg */; };
+		E56A271A1F8D676D00A8D204 /* medical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E56A27141F8D676D00A8D204 /* medical.jpg */; };
+		E56A271B1F8D676D00A8D204 /* west-campus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E56A27151F8D676D00A8D204 /* west-campus.jpg */; };
+		E56A271C1F8D676D00A8D204 /* Wolfson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E56A27161F8D676D00A8D204 /* Wolfson.jpg */; };
+		E56A271E1F8D684000A8D204 /* north.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E56A271D1F8D684000A8D204 /* north.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		E56A26FF1F8D59FC00A8D204 /* HW2 - Campus OverviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW2 - Campus OverviewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56A27031F8D59FC00A8D204 /* HW2___Campus_OverviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HW2___Campus_OverviewUITests.m"; sourceTree = "<group>"; };
 		E56A27051F8D59FC00A8D204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E56A27111F8D676D00A8D204 /* hialeah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hialeah.jpg; path = ../../../../Documents/hialeah.jpg; sourceTree = "<group>"; };
+		E56A27121F8D676D00A8D204 /* Interamerican.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Interamerican.jpg; path = ../../../../Documents/Interamerican.jpg; sourceTree = "<group>"; };
+		E56A27131F8D676D00A8D204 /* Kendall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Kendall.jpg; path = ../../../../Documents/Kendall.jpg; sourceTree = "<group>"; };
+		E56A27141F8D676D00A8D204 /* medical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = medical.jpg; path = ../../../../Documents/medical.jpg; sourceTree = "<group>"; };
+		E56A27151F8D676D00A8D204 /* west-campus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "west-campus.jpg"; path = "../../../../Documents/west-campus.jpg"; sourceTree = "<group>"; };
+		E56A27161F8D676D00A8D204 /* Wolfson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Wolfson.jpg; path = ../../../../Documents/Wolfson.jpg; sourceTree = "<group>"; };
+		E56A271D1F8D684000A8D204 /* north.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = north.jpg; path = ../../../../Documents/north.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +121,13 @@
 				E56A26E51F8D59FC00A8D204 /* ViewController.m */,
 				E56A26E71F8D59FC00A8D204 /* Main.storyboard */,
 				E56A26EA1F8D59FC00A8D204 /* Assets.xcassets */,
+				E56A271D1F8D684000A8D204 /* north.jpg */,
+				E56A27121F8D676D00A8D204 /* Interamerican.jpg */,
+				E56A27111F8D676D00A8D204 /* hialeah.jpg */,
+				E56A27131F8D676D00A8D204 /* Kendall.jpg */,
+				E56A27141F8D676D00A8D204 /* medical.jpg */,
+				E56A27151F8D676D00A8D204 /* west-campus.jpg */,
+				E56A27161F8D676D00A8D204 /* Wolfson.jpg */,
 				E56A26EC1F8D59FC00A8D204 /* LaunchScreen.storyboard */,
 				E56A26EF1F8D59FC00A8D204 /* Info.plist */,
 				E56A26DE1F8D59FC00A8D204 /* Supporting Files */,
@@ -247,8 +268,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E56A26EE1F8D59FC00A8D204 /* LaunchScreen.storyboard in Resources */,
+				E56A27191F8D676D00A8D204 /* Kendall.jpg in Resources */,
 				E56A26EB1F8D59FC00A8D204 /* Assets.xcassets in Resources */,
+				E56A27181F8D676D00A8D204 /* Interamerican.jpg in Resources */,
+				E56A27171F8D676D00A8D204 /* hialeah.jpg in Resources */,
 				E56A26E91F8D59FC00A8D204 /* Main.storyboard in Resources */,
+				E56A271A1F8D676D00A8D204 /* medical.jpg in Resources */,
+				E56A271E1F8D684000A8D204 /* north.jpg in Resources */,
+				E56A271C1F8D676D00A8D204 /* Wolfson.jpg in Resources */,
+				E56A271B1F8D676D00A8D204 /* west-campus.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +537,7 @@
 				E56A270A1F8D59FC00A8D204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E56A270B1F8D59FC00A8D204 /* Build configuration list for PBXNativeTarget "HW2 - Campus OverviewTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +546,7 @@
 				E56A270D1F8D59FC00A8D204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E56A270E1F8D59FC00A8D204 /* Build configuration list for PBXNativeTarget "HW2 - Campus OverviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +555,7 @@
 				E56A27101F8D59FC00A8D204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
